@@ -1,0 +1,222 @@
+/************************* Defaults ****************************************/
+body {
+  font-family: 'Dosis', sans-serif;
+}
+
+input[type=text] {
+
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border-radius: 4px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+
+}
+
+button {
+  color: blue;
+  background-color: white;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  padding: 10px 30px;
+  border-width: 3px;
+  border-color:black;
+  border-style: solid;
+}
+
+button:hover{
+  color: red;
+  background-color:rgb(230,230,230)
+}
+
+
+
+/************************* Main ******************************************/
+
+.title {
+  font-size: 32px;
+  text-align: center;
+}
+
+.body {
+  font: ;
+}
+
+.section-heading {
+  font-size: 20pt;
+  text-align: center;
+}
+
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header'
+    'food food calendar calendar calendar'
+    'food food piazza piazza piazza'
+    'food food todo todo todo';
+
+  grid-gap: 10px;
+  background-color: #000000;
+
+  padding: 10px;
+
+}
+
+.grid-container > div {
+  padding: 20px 0;
+  background-color: #FFEE88;
+
+  border-radius: 15px;
+}
+
+
+
+/****************************** Toogle Bar CSS ***************************/
+.toggleBar {
+  background-color: black;
+  overflow: hidden;
+  grid-area: header;
+
+}
+
+.toggleBar .toggle-item {
+  color: grey;
+  text-align: center;
+  float:left;
+  padding : 10px;
+  background: none;
+  margin-left: 10px;
+
+
+
+
+}
+
+.toggleBar .toggle-item.active {
+  color: black;
+  background-color:#FFFFFF;
+  border-radius: 10px;
+
+
+}
+
+/************************* Menu Items ******************************************/
+
+.meal {
+  border-radius: 25px;
+  display: inline-block;
+  word-wrap: break-word;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  background-color: #991144;
+
+
+
+}
+
+.meal:hover {
+  background-color: #FFFFFF;
+}
+
+.menu {
+    overflow-y:scroll;
+    height: 500px;
+    width: 400px;
+    border-radius: 2px;
+    border-color: black;
+    border-style: solid;
+    margin: 10px;
+    background-color: #eeeeee
+
+}
+
+.food {
+  grid-area: food;
+}
+
+.food-container {
+  display: grid;
+  grid-template-areas:
+    'ratty vdub'
+    'andrews bluer'
+    'jos ivy';
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+.food-container > div {
+  padding: 20px 0;
+}
+
+
+#\1531 {grid-area; ratty}
+#\1532 {grid-area: vdub;}
+#\1533 {grid-area: andrews}
+#\1534 {grid-area: bluer}
+#\1535 {grid-area: jos}
+#\1536 {grid-area: ivy}
+
+
+/********** TO-DO LIST *******************************************************/
+.todo {
+  grid-area: todo;
+}
+
+.todo-list {
+  padding: 10px;
+}
+
+.checkbox {
+  background: url(data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWw6c3BhY2U9InByZXNlcnZlIiB2ZXJzaW9uPSIxLjEiIHk9IjBweCIgeD0iMHB4IiB2aWV3Qm94PSIwIDAgMTggMTgiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDE4IDE4Ij4KICA8cGF0aCBkPSJtMTQgM2MwLjYgMCAxIDAuNCAxIDF2MTBjMCAwLjYtMC40IDEtMSAxaC0xMGMtMC42IDAtMS0wLjQtMS0xdi0xMGMwLTAuNiAwLjQtMSAxLTFoMTBtMC0xaC0xMGMtMS4xIDAtMiAwLjktMiAydjEwYzAgMS4xIDAuOSAyIDIgMmgxMGMxLjEgMCAyLTAuOSAyLTJ2LTEwYzAtMS4xLTAuOS0yLTItMnoiLz4KPC9zdmc+Cg==) no-repeat center;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url("data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWw6c3BhY2U9InByZXNlcnZlIiB2ZXJzaW9uPSIxLjEiIHk9IjBweCIgeD0iMHB4IiB2aWV3Qm94PSIwIDAgMTggMTgiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDE4IDE4Ij4KICA8cGF0aCBkPSJtMTQgM2MwLjYgMCAxIDAuNCAxIDF2MTBjMCAwLjYtMC40IDEtMSAxaC0xMGMtMC42IDAtMS0wLjQtMS0xdi0xMGMwLTAuNiAwLjQtMSAxLTFoMTBtMC0xaC0xMGMtMS4xIDAtMiAwLjktMiAydjEwYzAgMS4xIDAuOSAyIDIgMmgxMGMxLjEgMCAyLTAuOSAyLTJ2LTEwYzAtMS4xLTAuOS0yLTItMnoiLz4KPC9zdmc+Cg==");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-origin: padding-box;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: auto auto;
+    background-size: 18px 18px;
+
+    height: 18px;
+    width: 18px;
+    display: inline-block;
+    opacity: .45;
+
+}
+
+.checkbox:hover {
+  opacity: .87;
+
+}
+
+.todo-text {
+  background-color: rgba(0,0,0,0);
+  width:90%;
+}
+
+
+/*************** piazza *******************/
+.piazza {
+  grid-area: piazza;
+}
+
+/***************************** Calendar ************************************/
+
+.calendar-controls {
+  grid-area: calendar;
+  background-color:blue;
+
+}
+
+
+
+#message {
+  display: none;
+  text-align: center;
+  float:right;
+  padding : 10px;
+}
